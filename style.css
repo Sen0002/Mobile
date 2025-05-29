@@ -1152,3 +1152,56 @@ footer {
     gap: 10px;
   }
 }
+@media (max-width: 768px) {
+  /* Top Bar */
+  .top-bar {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .top-logo img {
+    height: 30px;
+  }
+
+  .top-link, .top-login {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .top-search {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .top-search img {
+    height: 20px;
+  }
+
+  .search-input {
+    width: 100%;
+    top: 35px;
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .footer-contact {
+    margin-bottom: 10px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+}
