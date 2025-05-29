@@ -1152,3 +1152,21 @@ footer {
     gap: 10px;
   }
 }
+
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 0 10px;
+  }
+
+  .footer-contact,
+  .footer-links {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  footer {
+    padding: 15px 10px;
+  }
+}
