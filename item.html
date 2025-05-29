@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Item Detail</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+<div class="top-bar">
+  <a href="index.html" class="top-logo">
+    <img src="image/home.png" alt="Home1" />
+  </a>
+  <a href="index.html" class="top-link">Home</a>
+
+  <div class="top-search">
+    <button id="searchToggle">
+      <img src="image/search.png" alt="Search" />
+    </button>
+    <input type="text" id="searchInput" class="search-input" placeholder="Search..." />
+  </div>
+
+  <a href="login.html" class="top-login">Register/Login</a>
+</div>
+
+<header class="header">Item Detail</header>
+
+<main class="item-detail">
+  <h2 id="item-title" class="item-title">Loading...</h2>
+
+  <div class="image-gallery"> <div class="main-image" id="main-image"></div> <div class="sub-images">
+      <div id="img2"></div> <div id="img3"></div> <div id="img4"></div> </div>
+  </div>
+
+  <div class="item-description"> <p id="text1" class="text1"></p>
+    <p id="text2" class="text2"></p>
+  </div>
+
+</main>
+
+    <!-- Modal Komentar -->
+<div id="commentModal" class="modal hidden">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Comments</h3>
+      <button id="closeModalBtn">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="comment">
+        <div class="avatar">Img</div>
+        <div class="comment-text">
+          <strong>User 1</strong> <span class="date">Today</span>
+          <p>Ini komentar pertama.</p>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="avatar">Img</div>
+        <div class="comment-text">
+          <strong>User 2</strong> <span class="date">Yesterday</span>
+          <p>Komentar kedua di sini.</p>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="avatar">Img</div>
+        <div class="comment-text">
+          <strong>User 3</strong> <span class="date">Yesterday</span>
+          <p>Komentar ketiga di sini.</p>
+        </div>
+      </div>
+      <div class="comment">
+        <div class="avatar">Img</div>
+        <div class="comment-text">
+          <strong>User 4</strong> <span class="date">Yesterday</span>
+          <p>Komentar keempat di sini.</p>
+        </div>
+      </div>
+      <!-- Tambahkan komentar lainnya jika diperlukan -->
+    </div>
+  </div>
+</div>
+    
+    <div class="buttons">
+      <button id="openModalBtn">Comments</button>
+      <a href="cart.html"><button>Buy Now</button></a>
+    </div>
+  </main>
+
+  <script src="item.js"></script>
+</body>
+</html>

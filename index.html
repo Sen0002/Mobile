@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mobile View</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <a href="index.html" class="top-logo">
+      <img src="image/home.png" alt="Home1" />
+    </a>
+    <a href="index.html" class="top-link">Home</a>
+
+    <div class="top-search">
+      <button id="searchToggle">
+        <img src="image/search.png" alt="Search" />
+      </button>
+      <input type="text" id="searchInput" class="search-input" placeholder="Search..." />
+    </div>
+
+    <a href="login.html" class="top-login">Register/Login</a>
+  </div>
+
+
+<!-- Logo & Cart -->
+  <div class="logo-cart">
+    <a href="index.html" class="logo">
+      <img src="image/logo1.png" alt="Logo" />
+    </a>
+    <a href="cart.html" class="cart">
+      <img src="image/kerkos.png" alt="Cart" />
+    </a>
+  </div>
+
+
+  <!-- Menu Button -->
+  <div class="menu-btn" onclick="toggleMenu()">Menu</div>
+  <div id="overlayMenu" class="overlay-menu hidden">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <div class="category-dropdown">
+        <a href="#" onclick="toggleCategories()">Categories <span class="toggle-icon">&#9660;</span></a>
+        <ul id="categoryList" class="hidden">
+          <li class="subcategory-header">Novel</li>
+          <li><a href="item.html?id=1">Seporsi Mie Ayam Sebelum Mati</a></li>
+          <li><a href="item.html?id=2">Laut Bercerita</a></li>
+          <li><a href="item.html?id=3">Manusia dan Badainya</a></li>
+          <li><a href="item.html?id=4">Floating in Space</a></li>
+          
+          <li class="subcategory-header">Komik</li>
+          <li><a href="item.html?id=5">One Piece vol 97</a></li>
+          <li><a href="item.html?id=6">Sakamoto Days vol 15</a></li>
+          <li><a href="item.html?id=7">Chainsaw Man vol 05</a></li>
+          <li><a href="item.html?id=8">Jujutsu Kaisen vol 13</a></li>
+          
+          <li class="subcategory-header">Light Novel</li>
+          <li><a href="item.html?id=9">Overlord 1 - The Undead King</a></li>
+          <li><a href="item.html?id=10">Overlord 2 - The Dark Warrior</a></li>
+          <li><a href="item.html?id=11">So I'm a Spider, So What? 1</a></li>
+          <li><a href="item.html?id=12">So I'm a Spider, So What? 2</a></li>
+        </ul>
+      </div>
+  
+      <a href="blog.html">Blog</a> 
+      
+      <a href="about.html">About</a> 
+    </div>
+  </div>
+
+  <div class="slider-container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="image/diskon1.png" /></div>
+        <div class="swiper-slide"><img src="image/toko.png" /></div>
+        <div class="swiper-slide"><img src="image/banyak3.png" /></div>
+      </div>
+  
+      <!-- Tombol navigasi -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  
+    <!-- Overlay tetap -->
+    <div class="slider-overlay">
+      <h2 class="slider-title">Slides Book!</h2>
+      <p class="slider-text">Temukan berbagai macam Komik, Light Novel dan Novel Pilihan...</p>
+      <button class="slider-button">Lihat!</button>
+    </div>
+  </div>
+  
+  <div class="promo-banner">
+    <img src="image/sale.png" alt="Promo" />
+  </div>
+
+  <!-- Content --> 
+  <section class="book-section">
+    <h2 class="section-title">Novel</h2>
+    <div class="book-grid">
+      <div class="book-card">
+        <a href="item.html?id=1">
+          <img src="image/novel1.PNG" alt="Seporsi Mie Ayam Sebelum Mati">
+        </a>
+        <div class="book-info">
+          <p class="book-author">Brian Khrisna</p>
+          <p class="book-title">Seporsi Mie Ayam Sebelum Mati</p>
+          <p class="book-price">Rp79.050 <span class="book-discount">15% <del>Rp93.000</del></span></p>
+        </div>
+      </div>
+      <div class="book-card">
+        <a href="item.html?id=2">
+          <img src="image/novel2.PNG" alt="Laut Bercerita">
+        </a>
+        <div class="book-info">
+          <p class="book-author">Leila S.Chudori</p>
+          <p class="book-title">Laut Bercerita</p>
+          <p class="book-price">Rp97.750 <span class="book-discount">15% <del>Rp115.000</del></span></p>
+        </div>
+      </div>
+      <div class="book-card">
+        <a href="item.html?id=3">
+          <img src="image/novel3.PNG" alt="Manusia dan Badainya">
+        </a>
+        <div class="book-info">
+          <p class="book-author">Syahid Muhammad</p>
+          <p class="book-title">Manusia dan Badainya</p>
+          <p class="book-price">Rp79.200 <span class="book-discount">15% <del>Rp88.000</del></span></p>
+        </div>
+      </div>
+      <div class="book-card">
+        <a href="item.html?id=4">
+          <img src="image/novel4.PNG" alt="Floating in Space">
+        </a>
+        <div class="book-info">
+          <p class="book-author">Naela Ali</p>
+          <p class="book-title">Floating in Space</p>
+          <p class="book-price">Rp68.000 <span class="book-discount">15% <del>Rp80.000</del></span></p>
+        </div>
+      </div>
+  
+    </div>
+
+    <h2 class="section-title">Komik</h2>
+    <div class="book-grid">
+      <div class="book-card">
+        <a href="item.html?id=5">
+          <img src="image/komik1.PNG" alt="One Piece vol 97">
+        </a>
+        <div class="book-info">
+          <p class="book-author">Eiichiro Oda</p>
+          <p class="book-title">One Piece vol 97</p>
+          <p class="book-price">Rp24.000 <span class="book-discount">15% <del>Rp32.000</del></span></p>
+        </div>
+      </div>
+      <div class="book-card">
+        <a href="item.html?id=6">
+          <img src="image/komik2.PNG" alt="Sakamoto Days vol 15">
+        </a>
+        <div class="book-info">
+          <p class="book-author">Yuto Suzuki</p>
+          <p class="book-title">Sakamoto Days vol 15</p>
+          <p class="book-price">Rp33.750 <span class="book-discount">15% <del>Rp45.000</del></span></p>
+        </div>
+      </div>
+      <div class="book-card">
+        <a href="item.html?id=7">
+          <img src="image/komik3.PNG" alt="Chainsaw Man vol 05">
+        </a>
+        <div class="book-info">
+          <p class="book-author">Tatsuki Fujimoto</p>
+          <p class="book-title">Chainsaw Man vol 05</p>
+          <p class="book-price">Rp40.800 <span class="book-discount">15% <del>Rp48.000</del></span></p>
+        </div>
+      </div>
+      <div class="book-card">
+        <a href="item.html?id=8">
+          <img src="image/komik4.PNG" alt="Jujutsu Kaisen vol 13">
+        </a>
+        <div class="book-info">
+          <p class="book-author">Gege Akutami</p>
+          <p class="book-title">Jujutsu Kaisen vol 13</p>
+          <p class="book-price">Rp34.000 <span class="book-discount">15% <del>Rp40.000</del></span></p>
+        </div>
+      </div>
+  
+    </div>
+    <h2 class="section-title">Light Novel</h2>
+    <div class="book-grid">
+      <div class="book-card">
+        <a href="item.html?id=9">
+          <img src="image/lnovel1.PNG" alt="Overlord 1 - The Undead King">
+        </a>
+        <div class="book-info">
+          <p class="book-author">Kugane Maruyama</p>
+          <p class="book-title">Light Novel: Overlord 1 - The Undead King</p>
+          <p class="book-price">Rp114.750 <span class="book-discount">15% <del>Rp135.000</del></span></p>
+        </div>
+      </div>
+      <div class="book-card">
+        <a href="item.html?id=10">
+          <img src="image/lnovel2.PNG" alt="Overlord 2 - The Dark Warrior">
+        </a>
+        <div class="book-info">
+          <p class="book-author">Kugane Maruyama</p>
+          <p class="book-title">Light Novel: Overlord 2 - The Dark Warrior</p>
+          <p class="book-price">Rp114.750 <span class="book-discount">15% <del>Rp135.000</del></span></p>
+        </div>
+      </div>
+      <div class="book-card">
+        <a href="item.html?id=11">
+          <img src="image/lnovel3.PNG" alt="So I'm a Spider, So What? 1">
+        </a>
+        <div class="book-info">
+          <p class="book-author">Okina Baba</p>
+          <p class="book-title">Light Novel So I'm a Spider, So What? 1</p>
+          <p class="book-price">Rp97.750 <span class="book-discount">15% <del>Rp115.000</del></span></p>
+        </div>
+      </div>
+      <div class="book-card">
+        <a href="item.html?id=12">
+          <img src="image/lnovel4.PNG" alt="So I'm a Spider, So What? 2">
+        </a>
+        <div class="book-info">
+          <p class="book-author">Okina Baba</p>
+          <p class="book-title">Light Novel So I'm a Spider, So What? 2</p>
+          <p class="book-price">Rp97.750 <span class="book-discount">15% <del>Rp115.000</del></span></p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <div class="comment-section">
+    <h3>Comments</h3>
+    
+    <div class="comment-list">
+      <!-- Contoh Komentar 1 -->
+      <div class="comment-item">
+        <div class="comment-avatar">A</div>
+        <div class="comment-content">
+          <div class="comment-author">Andi</div>
+          <div class="comment-text">Bukunya sangat bagus! Plot twist di akhir benar-benar tak terduga.</div>
+          <div class="comment-meta">28 Mei 2025 - 14:30</div>
+        </div>
+      </div>
+      
+      <!-- Contoh Komentar 2 -->
+      <div class="comment-item">
+        <div class="comment-avatar">B</div>
+        <div class="comment-content">
+          <div class="comment-author">Budi</div>
+          <div class="comment-text">Pengiriman cepat dan buku sampai dalam kondisi sempurna. Akan order lagi!</div>
+          <div class="comment-meta">27 Mei 2025 - 09:15</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Form Komentar -->
+    <div class="comment-form">
+      <h4>Add Your Comment</h4>
+      <textarea placeholder="Write your comment here..."></textarea>
+      <button type="submit">Post Comment</button>
+    </div>
+  </div>
+
+    <div class="blog-section">
+      <h2 class="section-title">Last Blog</h2>
+      <div class="blog-container">
+        <!-- Blog 1 -->
+        <div class="blog-card" onclick="window.location.href='blog1.html'">
+          <img src="image/cobuku2.jpg" alt="Apa itu Novel?" class="blog-image">
+          <div class="blog-content">
+            <h3>Apa itu Novel?</h3>
+            <p>Bagi beberapa orang yang tidak mungkin novel membosankan karena banyak nya teks dan kurang gambar.</p>
+            <span class="blog-date">28 Mei 2025</span>
+          </div>
+        </div>
+        
+        <!-- Blog 2 -->
+        <div class="blog-card" onclick="window.location.href='blog2.html'">
+          <img src="image/cobuku1.jpg" alt="Komik untuk Dewasa" class="blog-image">
+          <div class="blog-content">
+            <h3>Komik itu tidak untuk anak kecil saja!</h3>
+            <p>Beberapa komik memiliki ketentuan umur untuk pembaca, maka komik bukanlah hanya bacaan anak saja.</p>
+            <span class="blog-date">27 Mei 2025</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-contact">
+      <img src="image/mail.png" alt="Email" class="email-icon">
+      <span class="email-address">contact@bookstore.com</span>
+    </div>
+    <div class="footer-contact">
+      <img src="image/mail.png" alt="Email" class="email-icon">
+      <span class="email-address">support@bookstore.com</span>
+    </div>
+    <div class="footer-contact">
+      <img src="image/mail.png" alt="Email" class="email-icon">
+      <span class="email-address">feedback@bookstore.com</span>
+    </div>
+    
+    <div class="footer-links">
+      <a href="blog.html">Blog</a>
+      <a href="about.html">About</a>
+    </div>
+  </footer>
+
+  <!-- Hidden Fullscreen Menu -->
+  <div id="overlayMenu" class="overlay hidden">
+    <div class="overlay-content">
+      <div class="close-btn" onclick="toggleMenu()">✖</div>
+      <a href="#">Home</a>
+
+      <div class="category-section">
+        <div class="category-header" onclick="toggleCategories()">
+          Categories <span class="toggle-icon">📂</span>
+        </div>
+        <ul id="categoryList" class="category-list">
+          <!-- Novel -->
+          <li class="subcategory-header">Novel</li>
+          <li><a href="item.html?id=1">Seporsi Mie Ayam Sebelum Mati</a></li>
+          <li><a href="item.html?id=2">Laut Bercerita</a></li>
+          <li><a href="item.html?id=3">Manusia dan Badainya</a></li>
+          <li><a href="item.html?id=4">Floating in Space</a></li>
+          
+          <!-- Komik -->
+          <li class="subcategory-header">Komik</li>
+          <li><a href="item.html?id=5">One Piece vol 97</a></li>
+          <li><a href="item.html?id=6">Sakamoto Days vol 15</a></li>
+          <li><a href="item.html?id=7">Chainsaw Man vol 05</a></li>
+          <li><a href="item.html?id=8">Jujutsu Kaisen vol 13</a></li>
+          
+          <!-- Light Novel -->
+          <li class="subcategory-header">Light Novel</li>
+          <li><a href="item.html?id=9">Overlord 1 - The Undead King</a></li>
+          <li><a href="item.html?id=10">Overlord 2 - The Dark Warrior</a></li>
+          <li><a href="item.html?id=11">So I'm a Spider, So What? 1</a></li>
+          <li><a href="item.html?id=12">So I'm a Spider, So What? 2</a></li>
+        </ul>
+      </div>
+
+      <a href="#">Blog</a>
+      <a href="#">About</a>
+    </div>
+  </div>
+
+    <!-- Modal Komentar -->
+  <div id="commentModal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Comments</h3>
+        <button id="closeModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="comment">
+          <div class="avatar">Img</div>
+          <div class="comment-text">
+            <strong>User 1</strong> <span class="date">Today</span>
+            <p>Ini komentar pertama.</p>
+          </div>
+        </div>
+      <!-- Tambah komentar lainnya -->
+      </div>
+    </div>
+  </div>
+  
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
