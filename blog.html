@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Bookstore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <a href="index.html" class="top-logo">
+    <img src="image/home.png" alt="Home" />
+  </a>
+  <a href="index.html" class="top-link">Home</a>
+
+  <div class="top-search">
+    <button id="searchToggle">
+      <img src="image/search.png" alt="Search" />
+    </button>
+    <input type="text" id="searchInput" class="search-input" placeholder="Search..." />
+  </div>
+
+  <a href="login.html" class="top-login">Register/Login</a>
+</div>
+
+<main class="blog-page">
+  <h1 class="blog-page-title">My Blog</h1>
+  
+  <div class="blog-list">
+    <!-- Blog Post 1 -->
+    <div class="blog-post" onclick="window.location.href='blog1.html'">
+      <div class="blog-post-header">
+        <span class="blog-post-category">NOVEL</span>
+        <span class="blog-post-date">28 Mei 2025</span>
+      </div>
+      <h2 class="blog-post-title">Apa itu Novel?</h2>
+      <p class="blog-post-excerpt">Bagi beberapa orang yang tidak terbiasa, novel mungkin membosankan karena banyaknya teks dan kurangnya gambar...</p>
+      <a href="blog1.html" class="blog-post-link">View More</a>
+    </div>
+
+    <!-- Blog Post 2 -->
+    <div class="blog-post" onclick="window.location.href='blog2.html'">
+      <div class="blog-post-header">
+        <span class="blog-post-category">KOMIK</span>
+        <span class="blog-post-date">27 Mei 2025</span>
+      </div>
+      <h2 class="blog-post-title">Komik itu tidak untuk anak kecil saja!</h2>
+      <p class="blog-post-excerpt">Beberapa komik memiliki ketentuan umur untuk pembaca, maka komik bukanlah hanya bacaan anak saja...</p>
+      <a href="blog2.html" class="blog-post-link">View More</a>
+    </div>
+
+    <!-- Blog Post 3 (Baru) -->
+    <div class="blog-post">
+      <div class="blog-post-header">
+        <span class="blog-post-category">WEB DESIGN</span>
+        <span class="blog-post-date">18 Juli 2021</span>
+      </div>
+      <h2 class="blog-post-title">What Has Happened of All of the Web Design Ideas?</h2>
+      <p class="blog-post-excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporar sugliorisc nincus perspiciatis velit lute...</p>
+      <a href="#" class="blog-post-link">View More</a>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-contact">
+    <img src="image/mail.png" alt="Email" class="email-icon">
+    <span class="email-address">contact@bookstore.com</span>
+  </div>
+  <div class="footer-contact">
+    <img src="image/mail.png" alt="Email" class="email-icon">
+    <span class="email-address">support@bookstore.com</span>
+  </div>
+  <div class="footer-contact">
+    <img src="image/mail.png" alt="Email" class="email-icon">
+    <span class="email-address">feedback@bookstore.com</span>
+  </div>
+  
+  <div class="footer-links">
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
