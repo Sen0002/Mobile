@@ -1,0 +1,673 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary-color: #1a73e8;
+    --secondary-color: #202124;
+    --accent-color: #ea4335;
+}
+
+body {
+    line-height: 1.6;
+    color: #202124;
+    background-color: #ffffff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header & Navigation */
+.header {
+    background-color: #416D79;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: static;
+    z-index: 100;
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+}
+
+.site-info {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.site-info h1 {
+    color: #72DDF7;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cart-icon {
+    font-size: 32px; /* Lebih besar */
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.cart-icon:hover {
+    color: #00eaff;
+}
+
+
+.site-info h1 {
+    font-size: 40px;
+    color: #60dfff;
+    margin: 0; /* Opsional: untuk memastikan elemen berada di tengah jika memiliki lebar tertentu */
+}
+
+.nav {
+    background-color: aqua;
+    text-align: center;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: background 0.3s ease;
+}
+
+.nav ul li a:hover {
+  background-color: #00caca;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('image/toko.png'); /* Menggunakan background-image dan url() */
+    background-repeat: no-repeat; /* Agar gambar tidak diulang */
+    background-size: cover; /* Agar gambar menutupi seluruh area hero */
+    background-position: center; /* Agar posisi gambar berada di tengah */
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Features Section */
+.features {
+    padding: 4rem 2rem;
+    background-color:grey;
+}
+
+.features-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.feature-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 8px; /* Opsional: untuk sudut yang membulat */
+    object-fit: cover; /* Menjaga proporsi gambar dan mengisi area */
+}
+
+@media (max-width: 768px) {
+    .features-container {
+      grid-template-columns: 1fr;
+    }
+}
+  
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Book Types */
+.book-types {
+    padding: 4rem 2rem;
+    background-image: url(image/banner-bg.jpg);
+}
+
+.book-types-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.book-types-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.book-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.book-image {
+    height: 350px;
+    width: 100%;
+    background-color: #e8eaed;
+    overflow: hidden;
+}
+
+.book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.book-content {
+    padding: 1.5rem;
+    color: black;
+}
+
+/*Discount */
+.discount {
+    background-image: url('image/sale.png'); /* Menggunakan background-image dan url() */
+    background-repeat: no-repeat; /* Agar gambar tidak diulang */
+    background-size: cover; /* Agar gambar menutupi seluruh area hero */
+    background-position: center; /* Agar posisi gambar berada di tengah */
+    color: white;
+    padding: 6rem 2rem;
+}
+
+.discount-price {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+}
+
+/* Promo Section */
+.promo {
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url(image/promo.png);
+}
+  
+.promo h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: red;
+}
+  
+.promo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+  
+.promo-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+  
+.promo-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+  
+.price {
+    margin: 10px 0;
+}
+  
+.original-price {
+    text-decoration: line-through;
+    color: red;
+    font-size: 14px;
+}
+  
+.discount-price {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.order-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+  
+.order-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.riview {
+    font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .testimonial-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 25px 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .testimonial-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-role {
+    font-weight: 500;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .stars {
+    color: #00bfff;
+    font-size: 16px;
+  }
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.copyright {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .features-container,
+    .book-types-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Section Judul Pilihan Buku */
+
+.pilihan{
+    background-image: url('image/Rakbuku.png'); /* Menggunakan background-image dan url() */
+    background-repeat: no-repeat; /* Agar gambar tidak diulang */
+    background-size: cover; /* Agar gambar menutupi seluruh area hero */
+    background-position: center; /* Agar posisi gambar berada di tengah */
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.pilihan h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 0 20px;
+    color:white;
+}
+.novel {
+    text-align: center;
+    font-size: 32px;
+    margin: 40px 0 20px;
+    color: #333;
+}
+
+.light-novel {
+    text-align: center;
+    font-size: 32px;
+    margin: 40px 0 20px;
+    color: #333;
+}
+
+.komik {
+    text-align: center;
+    font-size: 32px;
+    margin: 40px 0 20px;
+    color: #333;
+}
+/* Daftar Buku */
+.pilihan-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.pilihan-card {
+    width: 250px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pilihan-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.pilihan-card h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.pilihan-card .genre {
+    font-size: 14px;
+    color: #666;
+}
+
+.pilihan-card .price-old {
+    text-decoration: line-through;
+    color: red;
+    margin: 5px 0;
+}
+
+.pilihan-card .price-now {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+}
+
+.order-btn {
+    background-color: white;
+    color: #00bfff;
+    border: 1.5px solid #00bfff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #00bfff;
+    color: white;
+}
+
+.tentang {
+    background-image: url('image/blog-1.jpg'); /* Menggunakan background-image dan url() */
+    background-repeat: no-repeat; /* Agar gambar tidak diulang */
+    background-size: cover; /* Agar gambar menutupi seluruh area hero */
+    background-position: center; /* Agar posisi gambar berada di tengah */
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.tentang h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 0 20px;
+    color:white;
+}
+
+/* Section Tentang Kami */
+.about-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-image img {
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #003d5c;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.kontak {
+    background-image: url('image/blog-3.jpg'); /* Menggunakan background-image dan url() */
+    background-repeat: no-repeat; /* Agar gambar tidak diulang */
+    background-size: cover; /* Agar gambar menutupi seluruh area hero */
+    background-position: center; /* Agar posisi gambar berada di tengah */
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.kontak h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 0 20px;
+    color:white;
+}
+
+/* Section Tentang Kami */
+.kontak-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.kontak-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.kontak-image img {
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.kontak-text {
+    max-width: 600px;
+}
+
+.kontak-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #003d5c;
+}
+
+.kontak-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Cart Kosong */
+
+.cart h1{
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 0 20px;
+    color:black;
+}
+
+
+.empty-cart-container {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.empty-cart-img {
+    width: 180px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.empty-cart-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #003d5c;
+}
+
+.empty-cart-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.btn-browse {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #00eaff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-browse:hover {
+    background-color: #00c6dd;
+}
